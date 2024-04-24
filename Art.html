@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Profile section */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-info {
+    max-width: 400px;
+}
+
+.profile-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info p {
+    margin-bottom: 5px;
+}
+
+/* Other styles remain unchanged */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .artwork {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .artwork:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .artwork img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .artwork-details {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .artwork-name {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+
+        .artwork-price {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        /* Contact section */
+        .contact-info {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        /* Add to Cart button */
+        .add-to-cart-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Shopping cart */
+        .shopping-cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .cart-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .cart-item-name {
+            font-weight: bold;
+        }
+
+        .cart-item-remove {
+            margin-left: auto;
+            color: red;
+            cursor: pointer;
+        }
+
+        /* Checkout button */
+        .checkout-btn {
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background-color: #005f6b;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .gallery-container {
+                justify-content: center;
+            }
+            .shopping-cart {
+                position: static;
+                margin-top: 20px;
+            }
+        }
+        /* Form styles */
+        .checkout-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .checkout-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .checkout-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .checkout-form button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Art Gallery</h1>
+
+<div class="profile">
+   
+    <img src="https://i.ibb.co/G0tXtKd/Whats-App-Image-2024-04-10-at-02-57-10-9376c7ff.jpg" alt="Profile Picture">
+    <div class="profile-info">
+        <h2>Mausumi Bhuyan</h2>
+        <p>Email: <a href="mailto:amreshbhuyanone@gmail.com">amreshbhuyanone@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917855993195">7855993195</a></p>
+        <p>Address: At-Odisha, Mayurbhanj, Pin-757026, India</p>
+    </div>
+</div>
+
+<!-- Search bar -->
+<div style="text-align: center; margin-bottom: 20px;">
+    <input type="text" id="searchInput" placeholder="Search artworks by name...">
+    <button onclick="searchArtworks()">Search</button>
+</div>
+
+<!-- Gallery container -->
+<div class="gallery-container" id="galleryContainer">
+    <!-- Artworks will be dynamically added here -->
+</div>
+
+<!-- Shopping cart -->
+<div class="shopping-cart" id="shoppingCart">
+    <h2>Shopping Cart</h2>
+    <div id="cartItems"></div>
+    <button class="checkout-btn" onclick="showCheckoutForm()">Checkout</button>
+</div>
+
+
+<!-- Contact information -->
+<div class="contact-info">
+    <p>Email: <a href="mailto:amreshbhuyanone@gmail.com">amreshbhuyanone@gmail.com</a></p>
+    <p>Phone: <a href="tel:+917855993195">7855993195</a></p>
+    <p>Address: At-Odisha, Mayurbhanj, Pin-757026, India</p>
+</div>
+
+<div class="checkout-form" id="checkoutForm" style="display: none;">
+    <h2>Checkout</h2>
+    <form onsubmit="handleCheckout(event)">
+        <input type="text" placeholder="Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <input type="tel" placeholder="Phone" required><br>
+        <input type="text" placeholder="Address" required><br>
+        <button type="submit">Place Order</button>
+    </form>
+</div>
+
+<script>
+    // Artwork data for Mausumi Bhuyan
+    const artworks = [
+        {
+            name: 'Artwork 1 by Mausumi Bhuyan',
+            price: '$150',
+            image: 'https://i.ibb.co/1dhvTC2/Whats-App-Image-2024-03-23-at-20-19-38-75fab908.jpg',
+            category: 'Hand Art'
+        },
+        {
+            name: 'Artwork 2 by Mausumi Bhuyan',
+            price: '$180',
+            image: 'https://i.ibb.co/8smbjRf/Whats-App-Image-2024-03-23-at-20-20-07-3f12df8e.jpg',
+            category: 'Hand Art'
+        },
+        {
+            name: 'Artwork 3 by Mausumi Bhuyan',
+            price: '$200',
+            image: 'https://i.ibb.co/kJ0SSLR/Whats-App-Image-2024-03-23-at-20-20-06-78b9fb25.jpg',
+            category: 'Hand Art'
+        },
+        {
+            name: 'Artwork 4 by Mausumi Bhuyan',
+            price: '$220',
+            image: 'https://i.ibb.co/DtZKnY1/Whats-App-Image-2024-03-23-at-20-20-04-08b3a1e6.jpg',
+            category: 'Hand Art'
+        },
+        // Add more artworks here
+        {
+            name: 'Artwork 5 by Mausumi Bhuyan',
+            price: '$250',
+            image: 'https://i.ibb.co/Wy10SF2/Whats-App-Image-2024-03-23-at-20-19-33-a96e9560.jpg',
+            category: 'Hand Art'
+        },
+        {
+            name: 'Artwork 6 by Mausumi Bhuyan',
+            price: '$280',
+            image: 'https://i.ibb.co/qsvMM4N/Whats-App-Image-2024-03-23-at-20-19-32-87a1c39f.jpg',
+            category: 'Hand Art'
+        },
+        {
+            name: 'Artwork 7 by Mausumi Bhuyan',
+            price: '$300',
+            image: 'https://i.ibb.co/Jp2DtKd/Whats-App-Image-2024-03-23-at-20-19-33-220b0583.jpg',
+            category: 'Hand Art'
+        }
+    ];
+
+    // Function to display artworks
+    function displayArtworks() {
+        const galleryContainer = document.getElementById('galleryContainer');
+        galleryContainer.innerHTML = ''; // Clear previous content
+
+        artworks.forEach(artwork => {
+            // Create artwork element
+            const artworkElement = document.createElement('div');
+            artworkElement.classList.add('artwork');
+            artworkElement.innerHTML = `
+                <img src="${artwork.image}" alt="${artwork.name}">
+                <div class="artwork-details">
+                    <h3 class="artwork-name">${artwork.name}</h3>
+                    <p class="artwork-price">${artwork.price}</p>
+                    <p class="artwork-category">${artwork.category}</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('${artwork.name}')">Add to Cart 🛒</button>
+                </div>
+            `;
+            galleryContainer.appendChild(artworkElement);
+        });
+    }
+
+    // Initialize cart array
+const cart = [];
+
+// Function to add artwork to the cart
+function addToCart(artworkName) {
+    // Find artwork by name
+    const artwork = artworks.find(art => art.name === artworkName);
+
+    // Add artwork to the cart array
+    cart.push(artwork);
+
+    // Display added item in the cart
+    const cartItems = document.getElementById('cartItems');
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+        <img src="${artwork.image}" alt="${artwork.name}">
+        <div>
+            <p class="cart-item-name" data-name="${artwork.name}">${artwork.name}</p>
+            <p>${artwork.price}</p>
+        </div>
+        <button class="cart-item-remove" onclick="removeFromCart('${artwork.name}')">Remove</button>
+    `;
+    cartItems.appendChild(cartItem);
+}
+
+// Function to remove artwork from the cart
+function removeFromCart(artworkName) {
+    // Remove the artwork from the HTML representation
+    const cartItems = document.getElementById('cartItems');
+    const cartItem = cartItems.querySelector(`.cart-item-name[data-name="${artworkName}"]`);
+    cartItems.removeChild(cartItem);
+
+    // Remove the artwork from the cart array
+    const index = cart.findIndex(item => item.name === artworkName);
+    cart.splice(index, 1);
+}
+
+    // Function to perform checkout
+    function showCheckoutForm() {
+        document.getElementById('checkoutForm').style.display = 'block';
+    }
+
+    function handleCheckout(event) {
+        event.preventDefault(); // Prevent form submission
+        const formData = new FormData(event.target);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const address = formData.get('address');
+        
+        // Display confirmation message
+        const confirmationMessage = `
+            <h2>Order Confirmation</h2>
+            <p><strong>Name:</strong> ${name}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Address:</strong> ${address}</p>
+            <p>Thank you for your purchase!</p>
+        `;
+        document.getElementById('checkoutForm').innerHTML = confirmationMessage;
+    }
+
+
+    // Function to search artworks by name
+    function searchArtworks() {
+        const searchInput = document.getElementById('searchInput').value.toLowerCase();
+        const filteredArtworks = artworks.filter((artwork) => artwork.name.toLowerCase().includes(searchInput));
+        displayArtworks(filteredArtworks);
+    }
+
+    // Call the function to display artworks when the page loads
+    window.onload = displayArtworks;
+</script>
+
+</body>
+</html>

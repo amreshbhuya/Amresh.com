@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" type="image/x-icon" />
+    <title>Comprehensive Resume Builder for Engineers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>/* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Lora:wght@400;700&display=swap');
+    
+    /* Global Styles */
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        line-height: 1.6;
+        background: linear-gradient(-45deg, #000000, #000000, #000000, #000000);
+        background-size: 400% 400%;
+        animation: AnimationName 15s ease infinite;
+        padding: 50px 20px;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 30px auto;
+        background-color: #fff;
+        padding: 25px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    
+    
+    
+    /* Template Corporate Classic Styles */
+    .template-corporate-classic {
+        background-color: #f9f9f9;
+        color: #333;
+        border: 1px solid #ddd;
+        padding: 20px;
+    }
+    
+    /* Template Corporate Classic Header Styles */
+    .template-corporate-classic h1 {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    
+    /* Template Corporate Classic Form Styles */
+    .template-corporate-classic form {
+        margin-top: 20px;
+    }
+    
+    .template-corporate-classic label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    .template-corporate-classic input[type="text"],
+    .template-corporate-classic input[type="email"],
+    .template-corporate-classic input[type="url"],
+    .template-corporate-classic textarea,
+    .template-corporate-classic select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+    
+    .template-corporate-classic input[type="text"]:focus,
+    .template-corporate-classic input[type="email"]:focus,
+    .template-corporate-classic input[type="url"]:focus,
+    .template-corporate-classic textarea:focus,
+    .template-corporate-classic select:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+    
+    .template-corporate-classic button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .template-corporate-classic button:hover {
+        background-color: #2980b9;
+    }
+    
+    /* Template Creative Flow Styles */
+    .template-creative-flow {
+        background-image: url('https://example.com/creative-background.png'); /* Replace with actual URL */
+        background-size: cover;
+        background-position: center;
+        color: #fafafa;
+        border: 1px solid #b3e0ff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    /* Template Tech Modern Styles */
+    .template-tech-modern {
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        border: 1px solid #233140;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    /* Template Minimalist Styles */
+    .template-minimalist {
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    /* Template Dynamic Styles */
+    .template-dynamic {
+        background: linear-gradient(120deg, #6a9113 40%, #141517 100%);
+        color: white;
+        border: 1px solid #4b6a2f;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+    
+    /* Input and Form Styles */
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    textarea,
+    select {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+    
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="url"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #3498db;
+        outline: none;
+    }
+    
+    /* Button Styles */
+    button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #2980b9;
+    }
+    
+    /* Template Default Styles */
+    .template-default {
+        /* Define styles for default template */
+        background-color: #f4f4f4;
+        color: #333;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    /* Template Corporate Classic Styles */
+    .template-corporate-classic {
+        /* Define styles for corporate classic template */
+        background-color: #f9f9f9;
+        color: #333;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    /* Template Creative Flow Styles */
+    .template-creative-flow {
+        color: #ffffff;
+        perspective: 1000px; /* Added for 3D effect */
+        margin-bottom: 40px;
+        background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+        background-size: 100% 100%;
+        padding: 40px 0;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(120, 114, 124, 0.794);
+        transition: transform 0.3s;
+        overflow: hidden; /* Ensure that children don't overflow */
+        text-align:left;
+        position: relative;
+    }
+    
+    /* Template Tech Modern Styles */
+    .template-tech-modern {
+        /* Define styles for tech modern template */
+        background-color: #2c3e50;
+        color: #ecf0f1;
+        border: 1px solid #233140;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    /* Template Minimalist Styles */
+    .template-minimalist {
+        /* Define styles for minimalist template */
+        background-color: #fff;
+        color: #333;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+    }
+    
+    /* Template Dynamic Styles */
+    .template-dynamic {
+        /* Define styles for dynamic template */
+        background:linear-gradient(135deg ,rgb(100, 3, 3),rgb(148, 3, 3),rgb(255, 72, 0),rgb(255, 145, 0),rgb(225, 255, 0),rgb(138, 242, 1),rgb(0, 248, 13),rgb(0, 255, 115),rgb(0, 255, 213),rgb(0, 255, 251),rgb(0, 191, 255),rgb(0, 128, 255),rgb(0, 119, 255),rgb(0, 47, 255),rgb(144, 0, 255),rgb(183, 0, 255),rgb(242, 0, 255),rgb(255, 0, 191),rgb(255, 0, 136),rgb(255, 0, 43)); 
+        background-size: 400% 400%;
+        animation: AnimationName 20s ease infinite;
+        padding: 50px 20px;
+        text-align:left;
+        color: rgb(0, 0, 0);
+    }
+    @keyframes AnimationName { 
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }</style>
+
+</head>
+<body>
+    <section id="resumeBulder">
+        <div class="container mt-5">
+            <h1 class="mb-4">BTech Resume Builder</h1>
+            <div class="form-group mb-3">
+                <label for="templateSelect">Choose Template:</label>
+                <select id="templateSelect" class="form-control">
+                    <option value="default">Default</option>
+                    <option value="corporate-classic">Corporate Classic</option>
+                    <option value="creative-flow">Creative Flow</option>
+                    <option value="tech-modern">Tech Modern</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="dynamic">Dynamic</option>
+                </select>
+            </div>
+            
+            <form id="resumeForm" class="row">
+                <div class="col-md-6">
+                    <!-- Basic Info -->
+                    <input type="text" class="form-control mb-2" id="name" placeholder="Full Name">
+                    <input type="email" class="form-control mb-2" id="email" placeholder="Email Address">
+                    <input type="text" class="form-control mb-2" id="phone" placeholder="Phone Number">
+                    <input type="url" class="form-control mb-2" id="linkedin" placeholder="LinkedIn Profile URL">
+                    <input type="url" class="form-control mb-2" id="github" placeholder="GitHub URL">
+                    
+                    <!-- Profile Photo Upload -->
+                    <label for="profilePhoto" class="form-label">Profile Photo</label>
+                    <input type="file" class="form-control mb-2" id="profilePhoto">
+
+                    <!-- Professional Summary -->
+                    <textarea class="form-control mb-2" id="summary" rows="3" placeholder="Professional Summary"></textarea>
+                    
+                    <!-- Skills -->
+                    <input type="text" class="form-control mb-2" id="skills" placeholder="Skills (comma-separated, e.g., Java, Python)">
+                    
+                    <!-- Languages -->
+                    <input type="text" class="form-control mb-2" id="languages" placeholder="Languages (e.g., English, Spanish)">
+
+                    <!-- Projects -->
+                    <textarea class="form-control mb-2" id="projects" rows="3" placeholder="Projects"></textarea>
+                    
+                    <!-- Experience -->
+                    <textarea class="form-control mb-2" id="experience" rows="3" placeholder="Experience"></textarea>
+                    
+                    <!-- Hobbies -->
+                    <input type="text" class="form-control mb-2" id="hobbies" placeholder="Hobbies (e.g., Chess, Reading)">
+                </div>
+                <div id="resumePreview" class="resume-preview p-3 border"></div>
+                <button type="button" class="btn btn-primary mt-3" id="updateButton">Update Preview</button>
+
+            </form>
+        </div>
+
+        <button id="download-pdf">Download PDF</button>
+
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const updateBtn = document.getElementById('updateButton');
+            const templateSelect = document.getElementById('templateSelect');
+    
+            if (updateBtn) {
+                updateBtn.addEventListener('click', updatePreview);
+            } else {
+                console.error('Button elements not found');
+            }
+    
+            templateSelect.addEventListener('change', function() {
+                const resumePreview = document.getElementById('resumePreview');
+                resumePreview.className = 'resume-preview p-3 border template-' + this.value;
+            });
+        });
+    
+        function updatePreview() {
+            console.log('Updating Preview...');
+            const template = document.getElementById('templateSelect').value;
+            const resumePreview = document.getElementById('resumePreview');
+            resumePreview.className = 'resume-preview p-3 border template-' + template;
+            const photo = document.getElementById('profilePhoto').files[0];
+            const photoURL = photo ? URL.createObjectURL(photo) : '';
+            const htmlContent = `
+            <img src="${photoURL}" alt="Profile Photo" style="width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1)"><br>
+            <h2>${document.getElementById('name').value}</h2>
+            <p>${document.getElementById('email').value}</p>
+            <p>${document.getElementById('phone').value}</p>
+            <a href="${document.getElementById('linkedin').value}" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            <a href="${document.getElementById('github').value}" target="_blank"><i class="bi bi-github"></i> GitHub</a>
+            <h3>Summary</h3>
+            <p>${document.getElementById('summary').value}</p>
+            <h3>Skills</h3>
+            <p>${document.getElementById('skills').value}</p>
+            <h3>Languages</h3>
+            <p>${document.getElementById('languages').value}</p>
+            <h3>Projects</h3>
+            <p>${document.getElementById('projects').value}</p>
+            <h3>Experience</h3>
+            <p>${document.getElementById('experience').value}</p>
+            <h3>Hobbies</h3>
+            <p>${document.getElementById('hobbies').value}</p>
+            `;
+            document.getElementById('resumePreview').innerHTML = htmlContent;
+            console.log('Preview Updated');
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amresh Bhuyan | Personal Website</title>
+    <link rel="icon" href="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    line-height: 1.6;
+    background: linear-gradient(-45deg, #000000, #000000, #000000, #000000);
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+    padding: 50px 20px;
+    
+}
+h1, h2 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    
+}
+.container h4 {
+    text-align: center; /* Center-align the title */
+    color: #051eff; /* Dark grey color for the text */
+    font-family: 'Wide Latian', sans-serif; /* Font family */
+    margin-bottom: 20px; /* Space between title and form */
+}
+.container iframe {
+    width: 100%; /* Responsive width */
+    height: 1084px; /* Fixed height as defined */
+    border-radius: 6px; /* Rounded corners */
+    border: none; /* No border */
+    
+}
+
+header {
+    color: #ffffff;
+    perspective: 1000px; /* Added for 3D effect */
+    margin-bottom: 40px;
+    background: url(https://i.ibb.co/zm81P6X/Whats-App-Image-2024-04-18-at-03-47-53-ce5186a6.jpg);
+    background-size: 100% 100%;
+    padding: 40px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(120, 114, 124, 0.794);
+    transition: transform 0.3s;
+    overflow: hidden; /* Ensure that children don't overflow */
+    text-align: center;
+    position: relative;
+
+}
+header:hover {
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;
+    
+    color: #ffffff; /* White text on hover */
+}
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+/* General styles for navigation list items */
+nav li {
+    display: inline-block; /* Aligns the links horizontally */
+    margin: 0 10px; /* Adds space between each button */
+}
+
+/* Styles for the links to make them look like buttons */
+nav a {
+    background: url(https://i.ibb.co/b3hrnPg/Whats-App-Image-2024-04-18-at-03-27-39-619894d8.jpg);
+    background-size: 100% 100%;
+    
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 20px; /* Top and bottom padding, Left and right padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+
+/* Hover effect for buttons */
+nav a:hover {
+    background:url(https://i.ibb.co/8cGTmHN/Whats-App-Image-2024-04-18-at-03-30-47-2336d098.jpg);
+    background-size: 100% 100%;
+    
+    color: #ffffff; /* White text on hover */
+}
+
+
+
+
+section {
+    padding: 50px 0;
+}
+
+footer {
+    color: #ffffff;
+    perspective: 1000px; /* Added for 3D effect */
+    margin-bottom: 40px;
+    background: url(https://i.ibb.co/zm81P6X/Whats-App-Image-2024-04-18-at-03-47-53-ce5186a6.jpg);
+    background-size: 100% 100%;
+    padding: 40px 0;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(120, 114, 124, 0.794);
+    transition: transform 0.3s;
+    overflow: hidden; /* Ensure that children don't overflow */
+    text-align: center;
+    position: relative;
+}
+
+footer:hover {
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;
+    color: #ffffff; /* White text on hover */
+}
+/* About Me section */
+.profile-picture {
+    display: block;
+    margin: 0 auto 40px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 20px rgb(255, 225, 0);
+    transition: transform 0.3s;
+}
+
+
+
+.profile-picture:hover {
+    transform: scale(1.1) rotateY(180deg);
+    transition: transform 0.6s;
+}
+
+/* Experience section */
+#experience ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+#experience li {
+    margin-bottom: 40px;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Projects section */
+.project {
+    perspective: 1000px; /* Added for 3D effect */
+    margin-bottom: 40px;
+    background: url(https://i.ibb.co/zm81P6X/Whats-App-Image-2024-04-18-at-03-47-53-ce5186a6.jpg);
+    background-size: 100% 100%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+    overflow: hidden; /* Ensure that children don't overflow */
+}
+
+
+.project:hover {
+    transform: rotateY(5deg);
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;
+    color: #ffffff; /* White text on hover */
+}
+.project-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+.project-front, .project-back {
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.project-back {
+    transform: rotateY(180deg);
+}
+.project h3 {
+    margin-bottom: 20px;
+    color: rgb(225, 221, 207);
+}
+
+/* Skill Bars */
+.skill {
+    margin-bottom: 20px;
+
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background: linear-gradient(-45deg, #00f919, #04ff26d2, #e1e114, #fa0400cb);
+    transition: width 1s ease;
+    
+}
+.skill-level:hover {
+    height: 100%;
+    background: linear-gradient(-45deg,green,yellow,blue,red);
+    background-size: 400% 400%;
+    animation: AnimationName 15s ease infinite;
+    padding: 50px 20px;
+}
+
+/* Skill Levels */
+.skill-level.html { width: 90%; } /* HTML5 proficiency level */
+.skill-level.css { width: 80%; } /* CSS3 proficiency level */
+.skill-level.js { width: 70%; } /* JavaScript proficiency level */
+.skill-level.java { width: 80%; } /* Java proficiency level */
+.skill-level.c { width: 70%; } /* C proficiency level */
+.skill-level.python { width: 85%; } /* Python proficiency level */
+/* Add more skill levels as needed */
+
+
+/* Contact form */
+#contact-form {
+    
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+#contact-form textarea {
+    height: 150px;
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #2df800, #4000f0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: linear-gradient(135deg, #258305, #1107a0);
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Success message styling */
+.success-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    /* Responsive styling */
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    #experience ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experience li {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills li {
+        max-width: 100%;
+    }
+
+    #contact-form {
+        max-width: 100%;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: calc(100% - 20px);
+    }
+}
+#myBtn {
+    border-radius: 10px; /* Rounded corners */
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 40px; /* Place the button 30px from the right */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    background-color: transparent;
+    font-size: x-large;
+    
+    
+    
+}
+
+#myBtn:hover {
+    background: linear-gradient(-65deg, #ff0000, #b508d8a1, #0920cd, #06e811);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+    text-align: center;
+    color: white;
+}
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Set to the desired wave container height */
+    overflow: hidden;
+    background: linear-gradient(-65deg, #00ffe5, #36e6017f, #001dfa, #03cdff);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+}
+
+.wave {
+    position: absolute;
+    width: 200%; /* Larger width for a smoother animation */
+    height: 100%;
+    bottom: 0;
+    background-repeat: repeat-x;
+    animation: wave-animation 10s linear infinite;
+}
+
+.wave1 {
+    background-image: url("https://i.ibb.co/SRtmGRb/water-1018808-640.jpg");
+    opacity: 0.6;
+    animation-duration: 10s;
+}
+
+.wave2 {
+    background-image: url("https://i.ibb.co/SRtmGRb/water-1018808-640.jpg");
+    opacity: 0.4;
+    animation-duration: 20s;
+    animation-delay: -5s; /* Offset the animation start to vary the wave pattern */
+}
+
+.wave3 {
+    background-image: url("https://i.ibb.co/SRtmGRb/water-1018808-640.jpg");
+    opacity: 0.5;
+    animation-duration: 30s;
+    animation-delay: -10s;
+}
+
+@keyframes wave-animation {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #9d08d8;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+  }
+  
+  .hero {
+    background:linear-gradient(135deg ,rgb(100, 3, 3),rgb(148, 3, 3),rgb(255, 72, 0),rgb(255, 145, 0),rgb(225, 255, 0),rgb(138, 242, 1),rgb(0, 248, 13),rgb(0, 255, 115),rgb(0, 255, 213),rgb(0, 255, 251),rgb(0, 191, 255),rgb(0, 128, 255),rgb(0, 119, 255),rgb(0, 47, 255),rgb(144, 0, 255),rgb(183, 0, 255),rgb(242, 0, 255),rgb(255, 0, 191),rgb(255, 0, 136),rgb(255, 0, 43));
+            
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+}
+
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Styling for the feedback form section */
+#feedback-form {
+    perspective: 1000px; /* Added for 3D effect */
+    width: 100%; /* Full width to utilize available space */
+    max-width: 800px; /* Max width to keep the form readable and not too stretched */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 30px; /* Padding for spacing around the content */
+    background: url(https://i.ibb.co/2j52yBW/Whats-App-Image-2024-04-18-at-03-47-52-8d4eb59c.jpg);
+    background-size: 100% 100%;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Light shadow for subtle depth */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Header styling within the feedback form */
+#feedback-form h2 {
+    text-align: center; /* Center-align the title */
+    color: #f8f8f8; /* Dark color for better readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font styling */
+    margin-bottom: 20px; /* Margin below the title to separate from form */
+}
+
+/* Iframe styling to fit the form properly */
+#feedback-form iframe {
+
+    width: 100%; /* Full width to match the section */
+    height: 500px; /* Fixed height, can adjust based on content */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Consistent rounded corners */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #feedback-form {
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+    #feedback-form iframe {
+        height: 600px; /* Adjust height as needed for better mobile view */
+    }
+}
+
+/* Additional styling for the button inside the hero section for better visibility */
+.hero .button {
+    background-color: #ffffff;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    perspective: 1000px; /* Added for 3D effect */
+}
+
+.hero .button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    perspective: 1000px; /* Added for 3D effect */
+}
+
+/* Base styling for the quiz section */
+#quiz {
+    font-family: 'Arial', sans-serif;
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;
+    padding: 50px 20px;
+    perspective: 1000px; /* Added for 3D effect */
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(157, 156, 156, 0.2);
+    width: 70%;
+    margin: 50px auto;
+    color: #fff;
+}
+
+#quiz-content {
+    margin-top: 30px;
+}
+
+/* Question styling */
+#question {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Styling for answer buttons */
+.answer {
+    background-color: #ffffff;
+    color: #007bff;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.answer:hover {
+    transform: scale(1.05);
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.answer:disabled {
+    cursor: default;
+    opacity: 0.7;
+}
+
+/* Result display with animation */
+#quiz-result {
+    margin-top: 30px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    height: 24px; /* Maintain a consistent height even when empty */
+}
+
+/* Next question button */
+#next-question {
+    display: none;
+    background-color: #ff511c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease;
+    
+}
+
+#next-question:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+}
+
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 600px) {
+    #quiz {
+        width: 90%;
+    }
+
+    .answer {
+        padding: 10px 20px;
+    }
+}
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(83, 83, 82);
+    perspective: 5000px; /* Added for 3D effect */
+}
+
+#snakeGame {
+    background: url(https://i.ibb.co/cY4JH6n/Whats-App-Image-2024-04-18-at-03-47-53-1ffababa.jpg);
+    background-size: 100% 100%;;
+    background-size: cover;
+    border: 2px solid rgba(226, 224, 231, 0.623);
+    box-shadow: 0 0 15px rgba(159, 159, 159, 0.5);
+    perspective: 1000px; /* Added for 3D effect */
+}
+
+canvas {
+    background-color: #000;
+    display: block; /* Prevents extra space below the canvas */
+}
+#game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal-controls {
+    display: flex;
+}
+
+.control-button {
+    background: url(https://i.ibb.co/b3hrnPg/Whats-App-Image-2024-04-18-at-03-27-39-619894d8.jpg);
+    background-size: 100% 100%;
+    
+    color: white; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    padding: 10px 20px; /* Top and bottom padding, Left and right padding */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+.control-button:hover{
+    background:url(https://i.ibb.co/8cGTmHN/Whats-App-Image-2024-04-18-at-03-30-47-2336d098.jpg);
+    background-size: 100% 100%;
+    
+    color: #ffffff; /* White text on hover */
+}
+
+.control-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px #9a9a9a;
+}
+
+
+#up-btn {
+    order: -1;  /* Places the "Up" button above the row */
+}
+
+form {
+    margin: 30px auto;
+    padding: 15px;
+    background: #222; /* Dark grey background for the form */
+    border-radius: 8px;
+    width: 80%; /* Adjust width as per design requirements */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.15); /* Subtle white shadow for depth */
+    text-align: center;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 70%; /* Adjust width for a better fit */
+    border: 2px solid #b4b3b7c5; /* Darker border for better visibility */
+    background-color: #615d5d; /* Dark input background */
+    color: #ddd; /* Light font color for contrast */
+    border-radius: 5px;
+    margin-right: 5px; /* Space between input field and button */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Vibrant blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #ccc;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #ccc;
+}
+
+/* Toggle Button */
+.theme-toggle {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Dark Mode Specific Styles */
+
+.fas.fa-sun { color: #f9dc3c; } /* Sun icon */
+.fas.fa-moon { color: #f8f8f8; } /* Moon icon */
+
+:root {
+    --primary-color: #21ff2c;
+    --background-color: #d97575;
+    --text-color: #efd9d9;
+    --button-hover-color: #f5e4e4;
+}
+body.dark-mode {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+    background: linear-gradient(-135deg, #edc6c6, #4899c7, #a6e99d, #f67ff6);
+    background-size: 400% 400%;
+    animation: AnimationName 5s ease infinite;
+    padding: 50px 20px;
+    
+}
+
+
+@keyframes colorChange {
+    0% { color: rgb(164, 153, 153); }
+    25% { color: rgb(174, 190, 176); }
+    50% { color: rgb(200, 198, 211); }
+    75% { color: rgb(214, 208, 195); }
+    100% { color: rgb(176, 160, 176); }
+}
+
+.text-animate {
+    animation: colorChange 10s infinite; /* Change duration as needed */
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menuBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+#navMenu {
+    display: none;
+    width:20%;
+    height:5%;
+    background-color:transparent;
+}
+
+#navMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navMenu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    background: transparent;
+    box-shadow: black;
+}
+
+
+
+ </style>
+</head>
+    
+<body>
+    <section id="main">
+
+<header>
+    
+    <div class="container">
+        <button id="menuBtn">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="#login">Login/Registration</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#notice">Notice</a></li>
+                <li><a href="#learning">Learning</a></li>
+            </ul>
+        </nav>
+        <h1>Amresh Bhuyan</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#game">Games</a></li>
+                <li>
+                    <button class="theme-toggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-sun" id="toggle-icon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+</header>
+
+<section id="about">
+    <div class="container">
+        <img src="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" alt="Profile Picture" class="profile-picture" ondblclick="profile()">
+<div id="profileModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="largeProfilePic" src="" alt="Large Profile">
+        <h2 id="profileName" style="color:#000000;">user name</h2>
+        <h6 id="profileBio" style="color: #858596d2;">bio here...</h6>
+    </div>
+</div>
+
+        <h2>About Me</h2>
+        <p class="text-animate" style="font-size: 18px;">Welcome to my personal website! I'm a passionate BTech student at SAMBALPUR UNIVERSITY INSITUTE OF INFORMATION TECHNOLOGY, currently working on my 2ND year project. I love exploring new technologies and building innovative solutions. Feel free to explore my portfolio and get in touch!</p>
+        <button onclick="toggleSections()" class="control-button">View Resume</button>
+    </div>
+</section>
+
+<div class="hero"
+   <h1>Welcome to My Website</h1>
+    <p>This is an awesome place to explore my work and ideas.</p>
+    <a href="#about" class="button">Learn More About Me</a>
+</div>
+
+
+<section id="experience">
+    <div class="container">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <h3>Software Engineering Intern</h3>
+                <p>XYZ Company</p>
+                <p>June 2023 - August 2023</p>
+                <p>Implemented new features and optimizations for the company's flagship product.</p>
+            </li>
+            <li>
+                <h3>Web Development Intern</h3>
+                <p>ABC Corporation</p>
+                <p>May 2022 - July 2022</p>
+                <p>Developed responsive web applications using HTML, CSS, and JavaScript.</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Resume Builder</h3>
+            <p>it is a simple Resume Builder</p>
+            <a href="resumebulder.html" class="control-button">View Resume</a>   
+          </div>
+        <div class="project">
+            <h3>Art Shop</h3>
+            <p>Art Shop by Amresh</p>
+            <a href="Art.html" class="control-button">View Art shop</a>
+        </div>
+    </div>
+    <ul style="color: #e7e7e7;">
+        <li><span class="mark">•</span> Personal Website (Frontend)</li>
+        <li><span class="mark">•</span> E-commerce Website</li>
+        <li><span class="mark">•</span> Resume Builder</li>
+        <li><span class="mark">•</span> Calculator</li>
+        <li><span class="mark">•</span> Snake Game</li>
+        <li><span class="mark">•</span> Tic Tac Toe Game</li>
+        <li><span class="mark">•</span> Login/Registration Form</li>
+        <li><span class="mark">•</span> Wallpaper Generator</li>
+        <li><span class="mark">•</span> Art Shop Website</li>
+        <li><span class="mark">•</span> Camera with Video and Image Saver Gallery</li>
+        <li><span class="mark">•</span> YouTube Copy Website</li>
+        <li><span class="mark">•</span> Facebook Copy Website</li>
+        <li style="color: #e6e7e9;"><span class="mark">•</span> University Front Page Development (Java GUI) - Developed a comprehensive university front page with features like student admission form, hostel admission form and information, payment form, anti-ragging form, add notice functionality, and gallery.</li>
+    </ul>
+
+</section>
+
+<section id="skills">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML5</h3>
+            <div class="skill-bar">
+                <div class="skill-level html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS3</h3>
+            <div class="skill-bar">
+                <div class="skill-level css"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-level js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Java</h3>
+            <div class="skill-bar">
+                <div class="skill-level java"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>C</h3>
+            <div class="skill-bar">
+                <div class="skill-level c"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-level python"></div>
+            </div>
+        </div>
+        <!-- Add more skills as needed -->
+    </div>
+</section>
+
+
+<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form" >
+            <div class="field">
+                <label for="from_name">Your Name</label>
+                <input type="text" name="from_name" id="from_name" required>
+              </div>
+              <div class="field">
+                <label for="to_name">Email id</label>
+                <input type="text" name="to_name" id="to_name" required>
+              </div>
+              <div class="field">
+                <label for="message">message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              
+             <input type="submit" id="button" value="Send Email" class="control-button" >
+        </form>
+    </div>
+</section>
+</form>
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('z3U5DbOR_kHkuixsa')
+
+  const btn = document.getElementById('button');
+
+document.getElementById('contact-form')
+.addEventListener('submit', function(event) {
+ event.preventDefault();
+
+ btn.value = 'Sending...';
+
+ const serviceID = 'default_service';
+ const templateID = 'template_y227s5h';
+
+ emailjs.sendForm(serviceID, templateID, this)
+  .then(() => {
+    btn.value = 'Send Email';
+    alert('Sent!');
+  }, (err) => {
+    btn.value = 'Send Email';
+    alert(JSON.stringify(err));
+  });
+});
+</script>
+<section id="feedback-form">
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <iframe src="https://forms.gle/C59Y9U4epTy5oJg48" title="Feedback Form" style="width: 100%; height: 800px;; border: none;" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+<form action="https://www.google.com/search" method="get">
+    <input type="text" name="q" placeholder="Search the web" required>
+    <button type="submit">Search</button>
+</form>
+<div class="wave-container">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+</div>
+
+<section id="quiz">
+    <div class="container">
+        <h2>Quick Quiz!</h2>
+        <div id="quiz-content">
+            <p id="question">Question will go here...</p>
+            <button class="answer" onclick="selectAnswer(0)">Option 1</button>
+            <button class="answer" onclick="selectAnswer(1)">Option 2</button>
+            <button class="answer" onclick="selectAnswer(2)">Option 3</button>
+            <button class="answer" onclick="selectAnswer(3)">Option 4</button>
+            <button id="next-question" style="display:none;" onclick="nextQuestion()">Next</button>
+        </div>
+        <p id="quiz-result"></p>
+    </div>
+</section>
+
+
+<section id="game">
+    <div class="container">
+        <h2>Snake Game</h2>
+        <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+        <div id="game-area">
+            <div class="controls">                
+                <button id="up-btn" class="control-button">Up</button>
+                <div class="horizontal-controls">
+                    <button id="left-btn" class="control-button">Left</button>
+                    <button id="down-btn" class="control-button">Down</button>
+                    <button id="right-btn" class="control-button">Right</button>
+            </div>
+            <canvas id="snakeGame" width="400" height="400"></canvas>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Amresh Bhuyan. All rights reserved.</p>
+        <!-- Email -->
+        <a href="mailto:amreshbhuyanone@gmail.com">
+            <i class="fas fa-envelope" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+        </a>
+        
+        <!-- Phone -->
+        <a href="tel:+917854998757">
+            <i class="fas fa-phone-alt" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+        </a>
+        
+        <!-- WhatsApp -->
+        <a href="https://wa.me/message/TCEZDFRBT7GQE1" target="_blank">
+            <i class="fab fa-whatsapp" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+        </a>
+        
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/amreshbhuyan/?hl=es-la" target="_blank">
+            <i class="fab fa-instagram" style="font-size: 40px; color: #ffffff; margin-right: 10px;"></i>
+        </a>
+        
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/amresh-bhuyan-aa0442298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <i class="fab fa-linkedin" style="font-size: 40px; color: #ffffff;"></i>
+        </a>
+    </div>
+</footer>
+
+
+<button id="myBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+</section>
+
+<script>
+
+    function openResume() {
+        window.open("resume.html", "_blank");
+    }
+    document.getElementById('menuBtn').addEventListener('click', function() {
+        var menu = document.getElementById('navMenu');
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'block';
+        }
+    });
+    function profile() {
+        var modal = document.getElementById("profileModal");
+        var img = document.querySelector(".profile-picture");
+        var modalImg = document.getElementById("largeProfilePic");
+        var name = document.getElementById("profileName");
+        var bio = document.getElementById("profileBio");
+    
+        // Set the content of the modal
+        modalImg.src = img.src; // Assuming you want to show a larger version of the same image
+        name.textContent = "Amresh Bhuyan"; // Placeholder name
+        bio.textContent = "Here's a little bit about Amresh: [I'm a passionate BTech student at SAMBALPUR UNIVERSITY INSITUTE OF INFORMATION TECHNOLOGY, currently working on my 2ND year project. I love exploring new technologies and building innovative solutions. Feel free to explore my portfolio and get in touch!]"; // Placeholder bio
+    
+        // Show the modal
+        modal.style.display = "block";
+    
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+    
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // Also close the modal if the user clicks outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    }
+    
+
+    function toggleDarkMode() {
+        const body = document.body;
+        const toggleIcon = document.getElementById('toggle-icon');
+        body.classList.toggle('dark-mode'); // Toggle dark mode on body
+    
+        // Change the icon based on the class
+        if (body.classList.contains('dark-mode')) {
+            toggleIcon.classList.remove('fa-sun');
+            toggleIcon.classList.add('fa-moon');
+        } else {
+            toggleIcon.classList.remove('fa-moon');
+            toggleIcon.classList.add('fa-sun');
+        }
+    }
+    
+    
+    
+
+    
+    document.getElementById('up-btn').addEventListener('click', () => moveSnake('up'));
+    document.getElementById('down-btn').addEventListener('click', () => moveSnake('down'));
+    document.getElementById('left-btn').addEventListener('click', () => moveSnake('left'));
+    document.getElementById('right-btn').addEventListener('click', () => moveSnake('right'));
+    
+    function moveSnake(direction) {
+        if (direction === 'up' && snake.dy === 0) {
+            snake.dy = -grid;
+            snake.dx = 0;
+        } else if (direction === 'down' && snake.dy === 0) {
+            snake.dy = grid;
+            snake.dx = 0;
+        } else if (direction === 'left' && snake.dx === 0) {
+            snake.dx = -grid;
+            snake.dy = 0;
+        } else if (direction === 'right' && snake.dx === 0) {
+            snake.dx = grid;
+            snake.dy = 0;
+        }
+    }
+    
+    
+    const canvas = document.getElementById('snakeGame');
+    const ctx = canvas.getContext('2d');
+    let grid = 20; // Size of the grid cell
+    let count = 0;
+    let snake = {
+        x: 160,
+        y: 160,
+        cells: [],
+        maxCells: 4,
+        dx: grid,
+        dy: 0,
+    };
+    let apple = {
+        x: 320,
+        y: 320,
+    };
+    
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    
+    function gameLoop() {
+        requestAnimationFrame(gameLoop);
+    
+        if (++count < 4) {
+            return;
+        }
+        count = 0;
+    
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+        snake.x += snake.dx;
+        snake.y += snake.dy;
+    
+        // Wrap snake position horizontally on edge of screen
+        if (snake.x < 0) {
+            snake.x = canvas.width - grid;
+        } else if (snake.x >= canvas.width) {
+            snake.x = 0;
+        }
+    
+        // Wrap snake position vertically on edge of screen
+        if (snake.y < 0) {
+            snake.y = canvas.height - grid;
+        } else if (snake.y >= canvas.height) {
+            snake.y = 0;
+        }
+    
+        // Keep track of where snake has been. Front of the array is always the head
+        snake.cells.unshift({x: snake.x, y: snake.y});
+    
+        // Remove cells as we move away from them
+        if (snake.cells.length > snake.maxCells) {
+            snake.cells.pop();
+        }
+    
+        // Draw apple
+        ctx.fillStyle = 'red';
+        ctx.fillRect(apple.x, apple.y, grid-1, grid-1);
+    
+        // Draw snake
+        ctx.fillStyle = 'green';
+        snake.cells.forEach((cell, index) => {
+            ctx.fillRect(cell.x, cell.y, grid-1, grid-1);
+            // Snake ate apple
+    if (cell.x === apple.x && cell.y === apple.y) {
+        snake.maxCells++;
+        score += 10; // Increment score
+        document.getElementById('score').textContent = score; // Update score display
+    
+        apple.x = getRandomInt(0, canvas.width / grid) * grid;
+        apple.y = getRandomInt(0, canvas.height / grid) * grid;
+    }
+    
+    
+            // Check collision with all cells after this one (check for self collision)
+    for (let i = index + 1; i < snake.cells.length; i++) {
+        if (cell.x === snake.cells[i].x && cell.y === snake.cells[i].y) {
+            snake.x = 160;
+            snake.y = 160;
+            snake.cells = [];
+            snake.maxCells = 4;
+            snake.dx = grid;
+            snake.dy = 0;
+            score = 0; // Reset score
+            document.getElementById('score').textContent = score; // Update score display
+        }
+    }
+    
+        });
+    }
+    
+    function adjustCanvasSize() {
+        const size = Math.min(window.innerWidth, window.innerHeight - 100); // 100 pixels for other UI elements
+        canvas.width = size;
+        canvas.height = size;
+        grid = size / 20; // Re-adjust grid size based on new dimensions
+        apple.x = getRandomInt(0, size / grid) * grid;
+        apple.y = getRandomInt(0, size / grid) * grid;
+        snake.x = grid * 5; // Reset snake position
+        snake.y = grid * 5;
+        snake.cells = [];
+        snake.maxCells = 4;
+        snake.dx = grid;
+        snake.dy = 0;
+    }
+    
+    // Handle keyboard controls
+    document.addEventListener('keydown', (e) => {
+        // prevent snake from backtracking
+        if (e.which === 37 && snake.dx === 0) {
+            snake.dx = -grid;
+            snake.dy = 0;
+        } else if (e.which === 38 && snake.dy === 0) {
+            snake.dy = -grid;
+            snake.dx = 0;
+        } else if (e.which === 39 && snake.dx === 0) {
+            snake.dx = grid;
+            snake.dy = 0;
+        } else if (e.which === 40 && snake.dy === 0) {
+            snake.dy = grid;
+            snake.dx = 0;
+        }
+    });
+    
+    // Handle touch controls
+    canvas.addEventListener('touchstart', handleTouchStart, false);
+    canvas.addEventListener('touchmove', handleTouchMove, false);
+    
+    let xDown = null;
+    let yDown = null;
+    
+    function handleTouchStart(evt) {
+        xDown = evt.touches[0].clientX;
+        yDown = evt.touches[0].clientY;
+    }
+    
+    function handleTouchMove(evt) {
+        if (!xDown || !yDown) {
+            return;
+        }
+    
+        let xUp = evt.touches[0].clientX;
+        let yUp = evt.touches[0].clientY;
+    
+        let xDiff = xDown - xUp;
+        let yDiff = yDown - yUp;
+    
+        if (Math.abs(xDiff) > Math.abs(yDiff)) { /* most significant */
+            if (xDiff > 0 && snake.dx === 0) {
+                /* left swipe */
+                snake.dx = -grid;
+                snake.dy = 0;
+            } else if (snake.dx === 0) {
+                /* right swipe */
+                snake.dx = grid;
+                snake.dy = 0;
+            }
+        } else {
+            if (yDiff > 0 && snake.dy === 0) {
+                /* up swipe */
+                snake.dy = -grid;
+                snake.dx = 0;
+            } else if (snake.dy === 0) {
+                /* down swipe */
+                snake.dy = grid;
+                snake.dx = 0;
+            }
+        }
+    
+        // Reset values
+        xDown = null;
+        yDown = null;
+    }
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        adjustCanvasSize();
+        window.addEventListener('resize', adjustCanvasSize);
+        requestAnimationFrame(gameLoop);
+    });
+    
+const questions = [
+{
+    question: "What is HTML?",
+    answers: ["Programming Language", "Markup Language", "Styling Language", "None"],
+    correct: 1
+},
+{
+    question: "Who is known as the father of computer science?",
+    answers: ["Albert Einstein", "Isaac Newton", "Charles Babbage", "Alan Turing"],
+    correct: 3
+},
+{
+    question: "What does 'CSS' stand for?",
+    answers: ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Colorful Style Sheets"],
+    correct: 2
+},
+{
+    question: "Which language runs in a web browser?",
+    answers: ["Java", "C#", "Python", "JavaScript"],
+    correct: 3
+},
+{
+    question: "What is the capital of France?",
+    answers: ["London", "Berlin", "Paris", "Rome"],
+    correct: 2
+},
+{
+    question: "Which planet is known as the Red Planet?",
+    answers: ["Earth", "Mars", "Jupiter", "Venus"],
+    correct: 1
+},
+{
+    question: "What year did the Titanic sink?",
+    answers: ["1912", "1905", "1898", "1923"],
+    correct: 0
+},
+{
+    question: "What is the largest ocean on Earth?",
+    answers: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+    correct: 3
+},
+{
+    question: "Which element has the chemical symbol 'O'?",
+    answers: ["Gold", "Oxygen", "Silver", "Osmium"],
+    correct: 1
+},
+{
+    question: "What is the hardest natural substance on Earth?",
+    answers: ["Gold", "Iron", "Diamond", "Platinum"],
+    correct: 2
+},
+{
+    question: "Who wrote the play 'Hamlet'?",
+    answers: ["William Shakespeare", "Charles Dickens", "Leo Tolstoy", "Mark Twain"],
+    correct: 0
+},
+{
+    question: "What is the smallest country in the world?",
+    answers: ["Monaco", "Maldives", "Vatican City", "San Marino"],
+    correct: 2
+},
+{
+    question: "How long does it take for the Earth to orbit the Sun?",
+    answers: ["365 days", "365.25 days", "364 days", "366 days"],
+    correct: 1
+},
+{
+    question: "What is the main ingredient in guacamole?",
+    answers: ["Tomato", "Avocado", "Onion", "Pepper"],
+    correct: 1
+},
+{
+    question: "Which gas is most prevalent in the Earth's atmosphere?",
+    answers: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    correct: 1
+},
+{
+    question: "What is the chemical formula for table salt?",
+    answers: ["NaCl", "KCl", "LiCl", "MgCl2"],
+    correct: 0
+},
+{
+    question: "Which animal is known as the 'Ship of the Desert'?",
+    answers: ["Camel", "Elephant", "Horse", "Donkey"],
+    correct: 0
+},
+{
+    question: "Which planet is closest to the sun?",
+    answers: ["Venus", "Earth", "Mercury", "Mars"],
+    correct: 2
+},
+{
+    question: "What year did World War II end?",
+    answers: ["1945", "1948", "1939", "1942"],
+    correct: 0
+},
+{
+    question: "What is the largest mammal in the world?",
+    answers: ["Elephant", "Blue Whale", "Giraffe", "Rhino"],
+    correct: 1
+},
+{
+    question: "Who painted the Mona Lisa?",
+    answers: ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+    correct: 2
+},
+{
+    question: "Which element is represented by the symbol 'O' in the periodic table?",
+    answers: ["Gold", "Oxygen", "Silver", "Osmium"],
+    correct: 1
+}
+
+];
+
+let currentQuestion = 0;
+let score = 0; // Initialize score
+
+function displayQuestion() {
+    const q = questions[currentQuestion];
+    document.getElementById('question').textContent = q.question;
+    const buttons = document.querySelectorAll('.answer');
+    buttons.forEach((button, index) => {
+        button.textContent = q.answers[index];
+        button.style.backgroundColor = ''; // Reset color
+        button.disabled = false; // Enable button
+    });
+    document.getElementById('quiz-result').textContent = ''; // Clear previous result
+    document.getElementById('next-question').style.display = 'none'; // Hide next button
+}
+
+function selectAnswer(index) {
+    const buttons = document.querySelectorAll('.answer');
+    const isCorrect = index === questions[currentQuestion].correct;
+    const resultDisplay = document.getElementById('quiz-result');
+
+    if (isCorrect) {
+        score++; // Increment score if correct
+        resultDisplay.textContent = "Correct!";
+    } else {
+        resultDisplay.textContent = "Sorry, that's wrong.";
+    }
+
+    buttons.forEach((button, idx) => {
+        if (idx === index) {
+            button.style.backgroundColor = isCorrect ? 'green' : 'red';
+        } else {
+            button.style.backgroundColor = ''; // Reset other buttons
+        }
+        button.disabled = true; // Disable all answer buttons to prevent changing answers
+    });
+
+    document.getElementById('next-question').style.display = 'block'; // Show next button
+}
+
+function nextQuestion() {
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        displayQuestion();
+    } else {
+        document.getElementById('quiz-result').textContent = "Quiz completed! Your score: " + score + "/" + questions.length;
+        document.getElementById('next-question').style.display = 'none'; // Hide next button
+        currentQuestion = 0; // Reset quiz and score
+        score = 0;
+    }
+}
+
+window.onload = displayQuestion;
+
+
+    
+    function validateForm() {
+        var nameInput = document.getElementById('name');
+        var emailInput = document.getElementById('email');
+        var messageInput = document.getElementById('message');
+
+        // Check if name, email, and message are not empty
+        if (nameInput.value.trim() === '') {
+            displayErrorMessage(nameInput,'Please enter your name.');
+            return false;
+        }
+
+        if (emailInput.value.trim() === '') {
+            displayErrorMessage(emailInput,' Please enter your email address.');
+            return false;
+        }
+
+        if (messageInput.value.trim() === '') {
+            displayErrorMessage(messageInput, ' Please enter your message.');
+            return false;
+        }
+
+        // Check if the email is valid
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value.trim())) {
+            displayErrorMessage(emailInput,'Please enter a valid email address.');
+            return false;
+        }
+
+        // If all validations pass, the form is submitted
+        displaySuccessMessage();
+        return true;
+    }
+
+    // Function to display error message for a specific input field
+    function displayErrorMessage(inputElement, message) {
+        var errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.textContent = message;
+
+        // Insert error message after the input field
+        inputElement.parentNode.insertBefore(errorElement, inputElement.nextSibling);
+
+        // Add error class to input field for styling
+        inputElement.classList.add('error');
+    }
+
+    // Function to display success message after form submission
+    function displaySuccessMessage() {
+        var formContainer = document.getElementById('contact-form');
+        formContainer.innerHTML = '<p class="success-message">Thank you for your message! We will get back to you soon.</p>';
+    }
+
+    // Add event listener to the form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        validateForm(); // Call the validateForm function
+    });
+    // When the user scrolls down 20px from the top of the document, show the button
+    
+//Get the button:
+var myBtn = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        myBtn.style.display = "block";
+    } else {
+        myBtn.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+myBtn.onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+};
+document.body.addEventListener('mousemove', e => {
+    const cursor = document.querySelector('.cursor');
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+  });
+
+  $(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
+    $('.parallax').css('top', -(scrolled * 0.3) + 'px');
+  });
+    
+
+  function toggleSections() {
+    var mainSection = document.getElementById("main");
+    var resumeSection = document.getElementById("resume");
+    
+    if (mainSection.style.display === "block") {
+        mainSection.style.display = "none";
+        resumeSection.style.display = "block";
+    } else {
+        mainSection.style.display = "block";
+        resumeSection.style.display = "none";
+    }
+}
+
+
+
+</script>
+
+</body>
+</html>
+<section id="resume" style="display: none;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amresh Bhuyan - Resume</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+<style>
+      /* CSS for Resume Section */
+      #resume {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    #resume .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    /* Left Section Styles */
+    #resume .left-section {
+        flex: 1;
+        padding: 30px;
+        background-color: #f5f5f5;
+        color: #8c8c8c;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        perspective: 3000px; /* Added for 3D effect */
+    }
+    /* Right Section Styles */
+    #resume .right-section {
+        flex: 2;
+        padding: 30px;
+        margin-left: 20px; /* Add some spacing */
+        border-radius: 10px;
+    }
+    #resume .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    #resume h1 {
+        margin: 0;
+        padding: 0;
+        font-size: 32px;
+        color: #011a8c;
+    }
+    #resume .section {
+        margin-bottom: 30px;
+    }
+    #resume h2 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+    }
+    #resume ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    #resume li {
+        margin-bottom: 5px;
+    }
+    #resume .contact-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    #resume .contact-icon {
+        margin-right: 10px;
+    }
+    #resume .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+    #resume .button:hover {
+        background-color: #0056b3;
+    }
+    #resume .mark {
+        color: #a2a2a2;
+        font-weight: bold;
+        float: left;
+        margin-right: 5px;
+        font-size:15px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h2>Personal Information</h2>
+            <div class="info-item">
+                <img src="https://i.ibb.co/0jbnyQ8/Amresh-pic1.jpg" alt="Amresh Bhuyan" class="profile-pic">
+            </div>
+            <div class="info-item">
+                <strong>Skills:</strong>
+                <ul>
+                    <li><span class="mark">•</span> Java</li>
+                    <li><span class="mark">•</span> C</li>
+                    <li><span class="mark">•</span> HTML</li>
+                    <li><span class="mark">•</span> CSS</li>
+                    <li><span class="mark">•</span> JavaScript</li>
+                    <li><span class="mark">•</span> Python</li>
+                    <li><span class="mark">•</span> Data Structures</li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <strong>Languages:</strong>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Odia</li>
+                </ul>
+            </div>
+            <div class="info-item">
+                <strong>Contact:</strong>
+                <div class="contact-info">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/email.png" alt="Email" class="contact-icon">
+                    <a href="mailto:amreshbhuyanone@gmail.com" style="color: #333; text-decoration: none;">amreshbhuyanone@gmail.com</a>
+                </div>
+                <div class="contact-info">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/phone.png" alt="Phone" class="contact-icon">
+                    <a href="tel:7854998757" style="color: #333; text-decoration: none;">7854998757</a>
+                </div>
+                <p>Address: At-Belpal, Po-khuntapal, Dist- Mayurbhanj, Block- Badashai, Mayurbhanj, Odisha, India</p>
+            </div>
+            <div class="info-item">
+                <strong>Hobbies:</strong>
+                <p>Art (Drawing)</p>
+                <p>Exploring New Technology</p>
+            </div>
+        </div>
+        <!-- Right Section -->
+        <div class="right-section">
+            <h1 style="color: #0657ae;font-size:xx-large; ">Amresh Bhuyan</h1>
+            
+            <p  style="color: #000000;"><strong>Objective:</strong> A dedicated and passionate second-year BTech Computer Science student at Sambalpur University (SUIIT) seeking an internship opportunity to leverage my programming skills in Java, C, and Data Structures,JavaScript,HTML ,CSS while contributing creatively to a dynamic work environment.</p>
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li style="color: #011a8c;"><span class="mark">•</span> Sambalpur University Institute of Information Technology - BTech in Computer Science and Engineering (CPI: 8.91)</li>
+                    <li style="color: #0257b3;"><span class="mark">•</span> SVRC, Balasore - Science</li>
+                    <li style="color: #396493;">---12th mark : 86%</li>
+                    <li style="color: #0257b3;"><span class="mark">•</span> RK New Govt High School, Singatia - CHSE</li>
+                    <li style="color: #396493;">---10th mark : 85.5%</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Projects</h2>
+                <ul style="color: #031325;">
+                    <li><span class="mark">•</span> Personal Website (Frontend)</li>
+                    <li><span class="mark">•</span> E-commerce Website</li>
+                    <li><span class="mark">•</span> Resume Builder</li>
+                    <li><span class="mark">•</span> Calculator</li>
+                    <li><span class="mark">•</span> Snake Game</li>
+                    <li><span class="mark">•</span> Tic Tac Toe Game</li>
+                    <li><span class="mark">•</span> Login/Registration Form</li>
+                    <li><span class="mark">•</span> Wallpaper Generator</li>
+                    <li><span class="mark">•</span> Art Shop Website</li>
+                    <li><span class="mark">•</span> Camera with Video and Image Saver Gallery</li>
+                    <li><span class="mark">•</span> YouTube Copy Website</li>
+                    <li><span class="mark">•</span> Facebook Copy Website</li>
+                    <li style="color: #011a8c;"><span class="mark">•</span> University Front Page Development (Java GUI) - Developed a comprehensive university front page with features like student admission form, hostel admission form and information, payment form, anti-ragging form, add notice functionality, and gallery.</li>
+                </ul>
+            </div>
+            <div class="section" style="color: #031121;">
+                <h2>Interests</h2>
+                <p>Web Development</p>
+                <p>Backend Development</p>
+                <p>Exploring New Technologies</p>
+                <p>Programming Paradigms</p>
+            </div>
+            <button id="download-pdf">Download PDF</button>
+            <button onclick="toggleSections()">Return Back</button>
+
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <script>
+        document.getElementById('download-pdf').addEventListener('click', function() {
+            const element = document.documentElement; // Capture the entire document
+            html2pdf()
+                .from(element)
+                .save('resume.pdf');
+        });
+    </script>
+    
+    
+</body>
+</html>
+</section>
+
+
+
